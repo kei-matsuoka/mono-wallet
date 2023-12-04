@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import { useEffect, useState } from 'react';
 import { Web3AuthNoModal } from '@web3auth/no-modal';
@@ -245,28 +245,11 @@ export default function Home() {
 
   return (
     <div className="container">
-      <h1 className="title">
-        <a
-          target="_blank"
-          href="https://web3auth.io/docs/sdk/pnp/web/no-modal"
-          rel="noreferrer"
-        >
-          Web3Auth
-        </a>{' '}
-        & ReactJS Example using Auth0
-      </h1>
+      <h1 className="title">MonoWallet</h1>
 
       <div className="grid">{loggedIn ? loggedInView : unloggedInView}</div>
 
-      <footer className="footer">
-        <a
-          href="https://github.com/Web3Auth/web3auth-pnp-examples/tree/main/web-no-modal-sdk/custom-authentication/single-verifier-examples/auth0-no-modal-example"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Source code
-        </a>
-      </footer>
+      <footer className="footer"></footer>
     </div>
   );
 }
